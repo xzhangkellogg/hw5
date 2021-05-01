@@ -75,7 +75,7 @@ window.addEventListener('DOMContentLoaded', async function () {
       // Construct a for loop to show the number of days' forcast based on user input
       for (let i = 0; i < days; i++) {
 
-        // Fill the forecast element with the location and forecast weather conditions
+        // Fill the forecast element with the forecast weather conditions (icon, date, high, low, and condition)
         forecastElement.innerHTML += `<div>
           <img src="https://${dailyForecast.forecastday[i].day.condition.icon}" class="mx-auto">
           <h1 class="text-center text-2xl text-bold text-gray-500">${dailyForecast.forecastday[i].date}</h1>
